@@ -1,0 +1,415 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    // Layout = null;
+}
+
+<style>
+    .btn-sm {
+        border-radius: 50% !important
+    }
+
+    .custom-select {
+        height: 32px !important
+    }
+
+    .form-control-sm {
+        height: 30px !important
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/tables/datatable/datatables.min.css">
+<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/jquery-ui.min.css">
+
+
+
+
+<div class="content-wrapper">
+    <div class="content-header row">
+        <div class="content-header-left col-md-6 col-12 mb-2">
+            <div class="row breadcrumbs-top">
+                <div class="breadcrumb-wrapper col-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="breadcrumb-item active">
+                            Category
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content-body">
+        <!-- Zero configuration table -->
+        <section id="configuration">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+
+                            <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><button class="btn btn-primary grid-form-dialog-btn">Add New Category</button></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="card-body card-dashboard">
+                                <table class="table table-striped table-bordered zero-configuration">
+                                    <thead>
+                                        <tr>
+                                            <th>Category Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Gavin Joyce</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Chang</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brenden Wagner</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiona Green</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shou Itou</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michelle House</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suki Burks</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescott Bartlett</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Cortez</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Martena Mccray</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unity Butler</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Zenaida Frank</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita Serrano</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Acosta</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara Stevens</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione Butler</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael Greer</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" id="btnEdit" type="submit" name="Command">
+                                                    <i class="ace-icon fa fa-pencil bigger-120" style="color:white;"></i>
+                                                </button>
+
+
+                                                <button class="btn btn-danger btn-sm" id="btnDelete" type="button" onclick="deleteConfirm(11162)">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Zero configuration table -->
+
+
+
+    </div>
+
+    <div class="card-content collapse show">
+        <div class="card-body">
+            <div class="row">
+               
+                <!-- Grid Form -->
+                <div class="col-lg-4 col-sm-4 col-12">
+                    <div class="form-group text-center">
+                       
+                        <p class="font-small-3 mt-1"></p>
+                        <div class="grid-form-dialog" title="Category Form">
+                            <hr />
+                            <div class="container">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label"> Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Category">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <div class="offset-sm-2 col-sm-10">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inline Form -->
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////-->
+<!-- BEGIN VENDOR JS-->
+<script src="~/app-assets/vendors/js/vendors.min.js"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="~/app-assets/vendors/js/ui/jquery.sticky.js"></script>
+<script src="~/app-assets/js/core/libraries/jquery_ui/jquery-ui.min.js"></script>
+<script src="~/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="~/app-assets/js/scripts/tables/datatables/datatable-basic.js"></script>
+<!-- END PAGE LEVEL JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="~/app-assets/js/scripts/ui/jquery-ui/dialog-tooltip.js"></script>
+<!-- END PAGE LEVEL JS-->
